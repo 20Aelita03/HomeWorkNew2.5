@@ -45,6 +45,7 @@ public class EmployeeService implements ServiceN {
         if (nums.contains(employee)) {
             return employee;
         }
+
         throw new EmployeeNotFoundException("Сотрудник не найден");
     }
     @Override
