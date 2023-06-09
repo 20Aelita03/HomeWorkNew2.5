@@ -50,5 +50,6 @@ public class EmployeeService implements ServiceN {
     @Override
     public void showAll(){
         System.out.println(nums);
+
     }
 }
