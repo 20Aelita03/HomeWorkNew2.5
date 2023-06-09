@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Collection;
+
 @RestController
 @RequestMapping("/employee")
 public class controller {
@@ -31,8 +33,8 @@ public class controller {
         return serviceN.delete(firstname,secondName);
     }
     @GetMapping(path = "/showAll")
-    public void showAll(){
-        serviceN.showAll();
+    public Collection<Employee> showAll(){
+       return serviceN.showAll();
     }
 
 }
